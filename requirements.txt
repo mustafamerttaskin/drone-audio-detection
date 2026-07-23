@@ -1,0 +1,31 @@
+# Bu proje Python 3.11 ile geliştirildi.
+# Aşağıdaki sürümler MacBook Air (Apple Silicon) üzerinde test edildi.
+
+# Sayısal hesaplama
+numpy<2.0
+scipy
+
+# Ses işleme
+librosa
+soundfile
+
+# Makine öğrenmesi
+scikit-learn
+torch
+torchaudio
+
+# Görselleştirme
+matplotlib
+seaborn
+
+# Web demo
+streamlit
+
+# Yardımcı
+pyyaml
+tqdm
+pandas
+joblib
+
+# Test
+pytest
