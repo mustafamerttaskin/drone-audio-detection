@@ -45,7 +45,6 @@ data/raw/**/*.ogg
 data/processed/
 models/*.pt
 models/*.joblib
-reports/
 app/_tmp_upload/
 
 # .gitkeep dosyalarını izle
