@@ -19,8 +19,7 @@ Log-Mel spektrogram üzerinde CNN + MFCC üzerinde SVM karşılaştırması
 
 ## Neden bu projeyi yaptım
 
-Geçen dönem [`speech-gender-classifier`](https://github.com/mustafamerttaskin/speech-gender-classifier) projemi bitirdikten sonra sinyal işleme tarafına ilgim iyice arttı. STE, ZCR, otokorelasyonla F0 çıkarımı gibi yöntemleri konuşma sinyaline uygulamıştım; aynı araçları başka bir probleme uygulayınca ne olur diye merak ettim.
-
+Geçen dönem `speech-gender-classifier` projemi bitirdikten sonra sinyal işleme tarafına ilgim iyice arttı. STE, ZCR, otokorelasyonla F0 çıkarımı gibi yöntemleri konuşma sinyaline uygulamıştım; aynı araçları başka bir probleme uygulayınca ne olur diye merak ettim.
 İnsansız hava araçlarının (İHA) tespiti bu sıralar hem sivil hem de savunma tarafında önemli bir problem. Görsel yöntemler (kamera + YOLO gibi) gece, sis ve engel arkasında zayıf kalıyor. Akustik tespit ise ucuz bir mikrofonla çalışabilen, bu senaryoları tamamlayan bir yöntem. Öğrenci projesi kapsamında sıfırdan yapılabilecek, aynı zamanda hem klasik sinyal işleme hem de derin öğrenme tarafını kapsayabilen tam bir problem olduğu için bunu seçtim.
 
 Amacım "bir CNN çalıştırdım işte" demenin ötesinde şuydu: **aynı problem üzerinde klasik yöntem (MFCC + SVM) ile derin öğrenmeyi (Mel-spektrogram + CNN) karşılaştırıp aralarındaki farkı gerçekten ölçmek**. Bu proje ikisini de yapıp sonuçları karşılaştırıyor.
@@ -51,22 +50,15 @@ Sonuç grafikleri:
 <table>
 <tr>
 <td><b>SVM Confusion Matrix</b></td>
-<td><b>CNN Confusion Matrix</b></td>
+<td><b>SVM ROC Eğrisi</b></td>
 </tr>
 <tr>
 <td><img src="reports/svm/confusion_matrix.png" width="380"/></td>
-<td><img src="reports/cnn/confusion_matrix.png" width="380"/></td>
-</tr>
-<tr>
-<td><b>SVM ROC Eğrisi</b></td>
-<td><b>CNN Eğitim Eğrileri</b></td>
-</tr>
-<tr>
 <td><img src="reports/svm/roc_curve.png" width="380"/></td>
-<td><img src="reports/cnn/training_curves.png" width="380"/></td>
 </tr>
 </table>
 
+<sub><i>CNN için confusion matrix ve eğitim eğrisi grafikleri yakında eklenecek.</i></sub>
 </div>
 
 ---
@@ -268,8 +260,7 @@ Bilgisayar Mühendisliği Öğrencisi — İstanbul Sağlık ve Teknoloji Ünive
 - GitHub: [@mustafamerttaskin](https://github.com/mustafamerttaskin)
 - E-posta: merttaskin67@gmail.com
 
-Bu proje, akustik sinyal işleme alanındaki [`speech-gender-classifier`](https://github.com/mustafamerttaskin/speech-gender-classifier) çalışmamın devamı niteliğinde.
-
+Bu proje, akustik sinyal işleme alanındaki `speech-gender-classifier` çalışmamın devamı niteliğinde.
 ---
 
 ## Lisans
